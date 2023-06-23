@@ -25,10 +25,12 @@
 
   <body style="position: relative;">
     <a-scene
+      vr-mode-ui="enterARButton: #hiddenEnterARButton"
       renderer="highRefreshRate: false; colorManagement: true;"
       fog="type: linear; color: #eafaff; far: 500;"
       background="color: #eafaff;"
     >
+      <a id="hiddenEnterARButton" style="visibility: hidden;"></a>
       <a-sky
         id="sky"
         theta-length="110"
